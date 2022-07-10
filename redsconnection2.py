@@ -11,7 +11,4 @@ conn = redshift_connector.connect(
 cur = conn.cursor()
 cur.execute(open("drop.sql","r").read())
 conn.commit()
-rows = cur.fetchall()
-print(rows)
-
 conn.close()
