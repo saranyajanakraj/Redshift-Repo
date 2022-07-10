@@ -1,1 +1,1 @@
-drop table stagedb.fleet
+drop table stagedb.fleet;
