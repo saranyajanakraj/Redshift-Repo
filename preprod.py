@@ -1,6 +1,7 @@
 import os
 import sys
-import redshift_connector
+import psycopg2
+from configparser import ConfigParser
 def main():
    input1 =os.environ['Branch']
    input2 =os.environ['ENV']
@@ -14,4 +15,4 @@ def main():
       print('Its not a DEV & main brach')
 if __name__ == "__main__":
    print('Welcome to Redshift Deployment')
-   main()
+main()
