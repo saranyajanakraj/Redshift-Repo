@@ -12,7 +12,8 @@ def main():
       exec(open("gba_db_deploy.py").read())
       print('Deploy completed')
    else:
-      print('Its not a DEV & main brach')
+        exec(open("gba_db_uvt_deploy.py").read())
+        print('gba_db_uvt_deploy completed')
 if __name__ == "__main__":
    print('Welcome to Redshift Deployment')
 main()
